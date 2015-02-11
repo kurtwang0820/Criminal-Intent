@@ -29,7 +29,9 @@ public class CrimeFragment extends Fragment {
     private CheckBox mSlovedCheckBox;
     public static final String EXTRA_CRIME_ID="com.ziliang.criminalintent.crime_id";
     private static final String DIALOG_DATE="date";
+    private static final String DIALOG_TIME="time";
     private static final int REQUEST_DATE=0;
+    private static final int REQUEST_TIME=1;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -70,9 +72,13 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 FragmentManager fm = getActivity().getFragmentManager();
-                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getmDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
-                dialog.show(fm, DIALOG_DATE);
+//                DatePickerFragment dialog = DatePickerFragment.newInstance(mCrime.getmDate());
+//                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
+//                dialog.show(fm, DIALOG_DATE);
+
+                TimePickerFragment dialog = TimePickerFragment.newInstance(mCrime.getmDate());
+                dialog.setTargetFragment(CrimeFragment.this, REQUEST_TIME);
+                dialog.show(fm, DIALOG_TIME);
             }
         });
         mSlovedCheckBox=(CheckBox)v.findViewById(R.id.crime_solved);
@@ -90,8 +96,13 @@ public class CrimeFragment extends Fragment {
         if(resultCode!= Activity.RESULT_OK){
             return;
         }
-        if(requestCode==REQUEST_DATE){
-            Date date=(Date)data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
+//        if(requestCode==REQUEST_DATE){
+//            Date date=(Date)data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
+//            mCrime.setmDate(date);
+//            updateDate();
+//        }
+        if(requestCode==REQUEST_TIME){
+            Date date=(Date)data.getSerializableExtra(TimePickerFragment.EXTRA_TIME);
             mCrime.setmDate(date);
             updateDate();
         }
