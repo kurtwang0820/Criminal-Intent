@@ -28,28 +28,32 @@ public class CrimeFragment extends Fragment {
     private EditText mTitleField;
     private Button mDateButton;
     private CheckBox mSlovedCheckBox;
-    public static final String EXTRA_CRIME_ID="com.ziliang.criminalintent.crime_id";
-    private static final String DIALOG_DATE="date";
-    private static final String DIALOG_TIME="time";
-    private static final int REQUEST_DATE=0;
-    private static final int REQUEST_TIME=1;
+    public static final String EXTRA_CRIME_ID = "com.ziliang.criminalintent.crime_id";
+//    public static final String DIALOG_DATE = "date";
+//    public static final String DIALOG_TIME = "time";
+//    public static final int REQUEST_DATE = 0;
+//    public static final int REQUEST_TIME = 1;
+    private static final int REQUEST_DATE_TIME = 2;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        UUID crimeId=(UUID)getArguments().getSerializable(EXTRA_CRIME_ID);
-        mCrime=CrimeLab.get(getActivity()).getCrime(crimeId);
+        UUID crimeId = (UUID) getArguments().getSerializable(EXTRA_CRIME_ID);
+        mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
     }
-    public static CrimeFragment newInstance(UUID crimeId){
-        Bundle args=new Bundle();
-        args.putSerializable(EXTRA_CRIME_ID,crimeId);
-        CrimeFragment fragment=new CrimeFragment();
+
+    public static CrimeFragment newInstance(UUID crimeId) {
+        Bundle args = new Bundle();
+        args.putSerializable(EXTRA_CRIME_ID, crimeId);
+        CrimeFragment fragment = new CrimeFragment();
         fragment.setArguments(args);
         return fragment;
     }
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        View v=inflater.inflate(R.layout.fragment_crime,container,false);
-        mTitleField=(EditText)v.findViewById(R.id.crime_title);
+        View v = inflater.inflate(R.layout.fragment_crime, container, false);
+        mTitleField = (EditText) v.findViewById(R.id.crime_title);
         mTitleField.setText(mCrime.getmTitle());
         mTitleField.addTextChangedListener(new TextWatcher() {
             @Override
@@ -67,7 +71,7 @@ public class CrimeFragment extends Fragment {
 
             }
         });
-        mDateButton=(Button)v.findViewById(R.id.crime_date);
+        mDateButton = (Button) v.findViewById(R.id.crime_date);
         updateDate();
         mDateButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -77,12 +81,15 @@ public class CrimeFragment extends Fragment {
 //                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE);
 //                dialog.show(fm, DIALOG_DATE);
 
-                TimePickerFragment dialog = TimePickerFragment.newInstance(mCrime.getmDate());
-                dialog.setTargetFragment(CrimeFragment.this, REQUEST_TIME);
-                dialog.show(fm, DIALOG_TIME);
+//                TimePickerFragment dialog = TimePickerFragment.newInstance(mCrime.getmDate());
+//                dialog.setTargetFragment(CrimeFragment.this, REQUEST_TIME);
+//                dialog.show(fm, DIALOG_TIME);
+                DateOrTimeFragment dialog = DateOrTimeFragment.newInstance(mCrime.getmDate());
+                dialog.setTargetFragment(CrimeFragment.this, REQUEST_DATE_TIME);
+                dialog.show(fm, null);
             }
         });
-        mSlovedCheckBox=(CheckBox)v.findViewById(R.id.crime_solved);
+        mSlovedCheckBox = (CheckBox) v.findViewById(R.id.crime_solved);
         mSlovedCheckBox.setChecked(mCrime.ismSolved());
         mSlovedCheckBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -92,23 +99,20 @@ public class CrimeFragment extends Fragment {
         });
         return v;
     }
+
     @Override
-    public void onActivityResult(int requestCode,int resultCode,Intent data){
-        if(resultCode!= Activity.RESULT_OK){
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        if (resultCode != Activity.RESULT_OK) {
             return;
         }
-//        if(requestCode==REQUEST_DATE){
-//            Date date=(Date)data.getSerializableExtra(DatePickerFragment.EXTRA_DATE);
-//            mCrime.setmDate(date);
-//            updateDate();
-//        }
-        if(requestCode==REQUEST_TIME){
-            Date date=(Date)data.getSerializableExtra(TimePickerFragment.EXTRA_TIME);
+        if (requestCode == REQUEST_DATE_TIME) {
+            Date date = (Date) data.getSerializableExtra(DateOrTimeFragment.DATE_TAG);
             mCrime.setmDate(date);
             updateDate();
         }
     }
-    public void updateDate(){
+
+    public void updateDate() {
         String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(mCrime.getmDate());
         mDateButton.setText(dateString);
     }

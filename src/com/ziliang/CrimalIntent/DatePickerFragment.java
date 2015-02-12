@@ -21,14 +21,14 @@ public class DatePickerFragment extends DialogFragment {
     private Date mDate;
     public static DatePickerFragment newInstance(Date date){
         Bundle args=new Bundle();
-        args.putSerializable(EXTRA_DATE,date);
+        args.putSerializable(DateOrTimeFragment.EXTRA_DATE_TIME,date);
         DatePickerFragment fragment=new DatePickerFragment();
         fragment.setArguments(args);
         return fragment;
     }
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
-        mDate=(Date)getArguments().getSerializable(EXTRA_DATE);
+        mDate=(Date)getArguments().getSerializable(DateOrTimeFragment.EXTRA_DATE_TIME);
         Calendar calendar=Calendar.getInstance();
         calendar.setTime(mDate);
         int year=calendar.get(Calendar.YEAR);
@@ -40,7 +40,7 @@ public class DatePickerFragment extends DialogFragment {
             @Override
             public void onDateChanged(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
                 mDate=new GregorianCalendar(year,monthOfYear,dayOfMonth).getTime();
-                getArguments().putSerializable(EXTRA_DATE,mDate);
+                getArguments().putSerializable(DateOrTimeFragment.EXTRA_DATE_TIME,mDate);
             }
         });
         return new AlertDialog.Builder(getActivity()).setView(v).setTitle(R.string.date_picker_title).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
@@ -55,7 +55,7 @@ public class DatePickerFragment extends DialogFragment {
             return;
         }
         Intent i=new Intent();
-        i.putExtra(EXTRA_DATE,mDate);
+        i.putExtra(DateOrTimeFragment.EXTRA_DATE_TIME,mDate);
         getTargetFragment().onActivityResult(getTargetRequestCode(),resultCode,i);
     }
 }

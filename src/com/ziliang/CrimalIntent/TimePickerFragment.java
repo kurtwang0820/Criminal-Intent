@@ -9,7 +9,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.TimePicker;
-
 import java.util.Calendar;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -18,26 +17,18 @@ import java.util.GregorianCalendar;
  * Created by Kurt on 2/11/2015.
  */
 public class TimePickerFragment extends DialogFragment {
-    public static final String EXTRA_TIME="com.zliang.criminalintent.time";
     private Date mDate;
     public static TimePickerFragment newInstance(Date date){
         Bundle args=new Bundle();
-        args.putSerializable(EXTRA_TIME,date);
+        args.putSerializable(DateOrTimeFragment.EXTRA_DATE_TIME,date);
         TimePickerFragment fragment=new TimePickerFragment();
         fragment.setArguments(args);
         return fragment;
     }
-    private void sendResult(int resultCode){
-        if(getTargetFragment()==null){
-            return;
-        }
-        Intent i=new Intent();
-        i.putExtra(EXTRA_TIME,mDate);
-        getTargetFragment().onActivityResult(getTargetRequestCode(),resultCode,i);
-    }
+
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState){
-        mDate=(Date)getArguments().getSerializable(EXTRA_TIME);
+        mDate=(Date)getArguments().getSerializable(DateOrTimeFragment.EXTRA_DATE_TIME);
         Calendar calendar= Calendar.getInstance();
         calendar.setTime(mDate);
         final int year=calendar.get(Calendar.YEAR);
@@ -54,7 +45,7 @@ public class TimePickerFragment extends DialogFragment {
             @Override
             public void onTimeChanged(TimePicker view, int hourOfDay, int minute) {
                 mDate=new GregorianCalendar(year,month,day,hourOfDay,minute).getTime();
-                getArguments().putSerializable(EXTRA_TIME,mDate);
+                getArguments().putSerializable(DateOrTimeFragment.EXTRA_DATE_TIME,mDate);
             }
         });
         return new AlertDialog.Builder(getActivity()).setView(v).setTitle(R.string.time_picker_title).setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
@@ -63,5 +54,13 @@ public class TimePickerFragment extends DialogFragment {
                 sendResult(Activity.RESULT_OK);
             }
         }).create();
+    }
+    private void sendResult(int resultCode){
+        if(getTargetFragment()==null){
+            return;
+        }
+        Intent i=new Intent();
+        i.putExtra(DateOrTimeFragment.EXTRA_DATE_TIME, mDate);
+        getTargetFragment().onActivityResult(getTargetRequestCode(),resultCode,i);
     }
 }
