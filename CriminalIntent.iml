@@ -18,7 +18,7 @@
     <orderEntry type="module-library">
       <library>
         <CLASSES>
-          <root url="jar://C:/cs software/android/extras/android/support/v13/android-support-v13.jar!/" />
+          <root url="jar://D:/android sdk/sdk/extras/android/support/v13/android-support-v13.jar!/" />
         </CLASSES>
         <JAVADOC />
         <SOURCES />
