@@ -13,8 +13,13 @@ public class Crime {
     private UUID mId;
     private String mTitle;
     private Date mDate;
+    private Photo mPhoto;
     private boolean mSolved;
-
+    private static final String JSON_ID="id";
+    private static final String JSON_TITLE="title";
+    private static final String JSON_SOLVED="solved";
+    private static final String JSON_DATE="date";
+    private static final String JSON_PHOTO="photo";
     public void setmTitle(String mTitle) {
         this.mTitle = mTitle;
     }
@@ -61,16 +66,22 @@ public class Crime {
     public String toString(){
         return mTitle;
     }
-    private static final String JSON_ID="id";
-    private static final String JSON_TITLE="title";
-    private static final String JSON_SOLVED="solved";
-    private static final String JSON_DATE="date";
+
     public JSONObject toJSON() throws JSONException{
         JSONObject json=new JSONObject();
         json.put(JSON_ID,mId.toString());
         json.put(JSON_TITLE,mTitle);
         json.put(JSON_SOLVED,mSolved);
         json.put(JSON_DATE,mDate.getTime());
+        if(mPhoto!=null){
+            json.put(JSON_PHOTO,mPhoto.toJSON());
+        }
         return json;
+    }
+    public Photo getmPhoto(){
+        return mPhoto;
+    }
+    public void setmPhoto(Photo p){
+        mPhoto=p;
     }
 }
