@@ -33,10 +33,7 @@
     </layouts>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-    </list>
+    <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)" />
     <ignored path="CrimalIntent.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
