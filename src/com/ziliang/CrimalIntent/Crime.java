@@ -1,9 +1,11 @@
 package com.ziliang.CrimalIntent;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
 /**
@@ -14,12 +16,16 @@ public class Crime {
     private String mTitle;
     private Date mDate;
     private Photo mPhoto;
+    private String mSuspect;
+    private String suspectNumber;
     private boolean mSolved;
     private static final String JSON_ID="id";
     private static final String JSON_TITLE="title";
     private static final String JSON_SOLVED="solved";
     private static final String JSON_DATE="date";
     private static final String JSON_PHOTO="photo";
+    private static final String JSON_SUSPECT="suspect";
+    private static final String JSON_SUSPECT_NUMBER="suspect number";
     public void setmTitle(String mTitle) {
         this.mTitle = mTitle;
     }
@@ -59,6 +65,15 @@ public class Crime {
         if(json.has(JSON_TITLE)){
             mTitle=json.getString(JSON_TITLE);
         }
+        if(json.has(JSON_PHOTO)){
+            mPhoto=new Photo(json.getJSONObject(JSON_PHOTO));
+        }
+        if(json.has(JSON_SUSPECT)){
+            mSuspect=json.getString(JSON_SUSPECT);
+        }
+        if(json.has(JSON_SUSPECT_NUMBER)){
+            suspectNumber=json.getString(JSON_SUSPECT_NUMBER);
+        }
         mSolved=json.getBoolean(JSON_SOLVED);
         mDate=new Date(json.getLong(JSON_DATE));
     }
@@ -73,6 +88,8 @@ public class Crime {
         json.put(JSON_TITLE,mTitle);
         json.put(JSON_SOLVED,mSolved);
         json.put(JSON_DATE,mDate.getTime());
+        json.put(JSON_SUSPECT,mSuspect);
+        json.put(JSON_SUSPECT_NUMBER,suspectNumber);
         if(mPhoto!=null){
             json.put(JSON_PHOTO,mPhoto.toJSON());
         }
@@ -83,5 +100,17 @@ public class Crime {
     }
     public void setmPhoto(Photo p){
         mPhoto=p;
+    }
+    public String getmSuspect(){
+        return mSuspect;
+    }
+    public void setmSuspect(String suspect){
+        mSuspect=suspect;
+    }
+    public void setSuspectNumber(String number){
+        suspectNumber=number;
+    }
+    public String getSuspectNumber(){
+        return suspectNumber;
     }
 }

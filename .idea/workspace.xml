@@ -32,19 +32,19 @@
       </layout>
     </layouts>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="app: com.ziliang.CrimalIntent" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/res/menu/crime_photo_delete_menu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Crime.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Crime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$1.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$3.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$3.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$4.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$4.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$5.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$5.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$2.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$CrimeAdapter.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$CrimeAdapter.class" />
@@ -57,11 +57,10 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/R$string.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/R$string.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/R.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/R.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_crime.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_crime.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout-land/fragment_crime.xml" afterPath="$PROJECT_DIR$/res/layout-land/fragment_crime.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/layout/fragment_crime_camera.xml" afterPath="$PROJECT_DIR$/res/layout/fragment_crime_camera.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/res/values/strings.xml" afterPath="$PROJECT_DIR$/res/values/strings.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CrimalIntent.iws" />
@@ -87,165 +86,37 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="fragment_crime.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_crime.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.709678" vertical-offset="60" max-vertical-offset="874">
-              <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
-              <folding>
-                <element signature="n#LinearLayout#1;n#LinearLayout#0;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="e#1915#1942#0" expanded="true" />
-                <element signature="e#2185#2211#0" expanded="true" />
-                <element signature="n#TextView#0;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="n#Button#0;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="n#CheckBox#0;n#LinearLayout#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_crime_camera.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout/fragment_crime_camera.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.0" vertical-offset="274" max-vertical-offset="817">
-              <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrimeCameraFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="3021">
-              <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#809#967#0" expanded="true" />
-                <element signature="e#966#967#0" expanded="true" />
-                <element signature="e#1020#2238#0" expanded="true" />
-                <element signature="e#2237#2238#0" expanded="true" />
-                <element signature="e#2727#2977#0" expanded="true" />
-                <element signature="e#2976#2977#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ImageFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="855">
-              <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="fragment_crime.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/res/layout-land/fragment_crime.xml">
-          <provider editor-type-id="android-designer">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-11.387096" vertical-offset="103" max-vertical-offset="1007">
-              <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-              <folding>
-                <element signature="n#LinearLayout#1;n#LinearLayout#0;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="e#1922#1949#0" expanded="true" />
-                <element signature="e#2192#2218#0" expanded="true" />
-                <element signature="n#TextView#0;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="e#2530#2559#0" expanded="true" />
-                <element signature="n#LinearLayout#1;n#LinearLayout#0;n#!!top" expanded="false" />
-                <element signature="e#3307#3335#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="CrimeFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.9343696" vertical-offset="1283" max-vertical-offset="2812">
-              <caret line="151" column="68" selection-start-line="151" selection-start-column="68" selection-end-line="151" selection-end-column="68" />
+            <state vertical-scroll-proportion="0.4581749" vertical-offset="2837" max-vertical-offset="3496">
+              <caret line="258" column="47" selection-start-line="258" selection-start-column="47" selection-end-line="258" selection-end-column="47" />
               <folding>
                 <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
                 <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
                 <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-                <element signature="e#5905#6378#0" expanded="true" />
-                <element signature="e#6377#6378#0" expanded="true" />
+                <element signature="class#3529:3952" expanded="false" />
+                <element signature="method#afterTextChanged#0;class#3529:3952" expanded="false" />
+                <element signature="e#4246#4342#0" expanded="false" />
+                <element signature="e#7432#7472#0" expanded="true" />
+                <element signature="e#7516#7547#0" expanded="true" />
+                <element signature="e#7725#7996#0" expanded="true" />
+                <element signature="e#7995#7996#0" expanded="true" />
+                <element signature="e#8225#8526#0" expanded="true" />
+                <element signature="e#8525#8526#0" expanded="true" />
+                <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
+                <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
+                <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
+                <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
                 <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
                 <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
                 <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PictureUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="969">
-              <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#319#351#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
-              <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#277#278#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#625#626#0" expanded="true" />
-                <element signature="e#657#658#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Crime.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1463">
-              <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-              <folding>
-                <element signature="e#1921#1922#0" expanded="true" />
-                <element signature="e#1950#1951#0" expanded="true" />
-                <element signature="e#1986#1987#0" expanded="true" />
-                <element signature="e#2010#2011#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CrimeListFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2375">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-              <folding>
-                <element signature="method#onCreate#0;class#CrimeListFragment#0" expanded="false" />
-                <element signature="method#onCreateOptionsMenu#0;class#CrimeListFragment#0" expanded="false" />
-                <element signature="method#onCreateContextMenu#0;class#CrimeListFragment#0" expanded="false" />
-                <element signature="method#createCrime#0;class#CrimeListFragment#0" expanded="false" />
-                <element signature="method#onOptionsItemSelected#0;class#CrimeListFragment#0" expanded="false" />
-                <element signature="method#onListItemClick#0;class#CrimeListFragment#0" expanded="false" />
+                <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
+                <element signature="e#12204#12244#0" expanded="true" />
+                <element signature="e#12286#12327#0" expanded="true" />
+                <element signature="e#12558#12601#0" expanded="true" />
+                <element signature="e#12638#12686#0" expanded="true" />
+                <element signature="e#12720#12803#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -289,17 +160,18 @@
         <option value="$PROJECT_DIR$/res/drawable/background_activated.xml" />
         <option value="$PROJECT_DIR$/res/layout/list_item_crime.xml" />
         <option value="$PROJECT_DIR$/res/menu/fragment_crime_delete.xml" />
-        <option value="$PROJECT_DIR$/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/AndroidManifest.xml" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraActivity.java" />
         <option value="$PROJECT_DIR$/res/layout/fragment_crime_camera.xml" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java" />
-        <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java" />
-        <option value="$PROJECT_DIR$/res/layout/fragment_crime.xml" />
-        <option value="$PROJECT_DIR$/res/layout-land/fragment_crime.xml" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java" />
+        <option value="$PROJECT_DIR$/res/menu/crime_photo_delete_menu.xml" />
+        <option value="$PROJECT_DIR$/res/values/strings.xml" />
+        <option value="$PROJECT_DIR$/res/layout-land/fragment_crime.xml" />
+        <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java" />
+        <option value="$PROJECT_DIR$/res/layout/fragment_crime.xml" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
       </list>
     </option>
@@ -307,7 +179,7 @@
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1612" />
+    <option name="width" value="1616" />
     <option name="height" value="876" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
@@ -383,6 +255,42 @@
               <option name="myItemId" value="res" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrimalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrimalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrimalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrimalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout-land" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -415,7 +323,7 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Test" />
     <property name="LayoutCode.rearrangeEntries" value="false" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -689,8 +597,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1612" height="876" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -706,9 +614,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297587" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32707775" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18498659" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Android" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2386059" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19201031" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19151671" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -751,23 +659,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="386" max-vertical-offset="1520">
-          <caret line="56" column="17" selection-start-line="56" selection-start-column="17" selection-end-line="56" selection-end-column="17" />
-          <folding>
-            <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#5905#6378#0" expanded="true" />
-            <element signature="e#6377#6378#0" expanded="true" />
-            <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/menu/fragment_crime_list.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
@@ -823,11 +714,28 @@
             <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#5905#6378#0" expanded="true" />
-            <element signature="e#6377#6378#0" expanded="true" />
+            <element signature="class#3529:3952" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#3529:3952" expanded="false" />
+            <element signature="e#4246#4342#0" expanded="false" />
+            <element signature="e#7432#7472#0" expanded="true" />
+            <element signature="e#7516#7547#0" expanded="true" />
+            <element signature="e#7725#7996#0" expanded="true" />
+            <element signature="e#7995#7996#0" expanded="true" />
+            <element signature="e#8225#8526#0" expanded="true" />
+            <element signature="e#8525#8526#0" expanded="true" />
+            <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="e#12204#12244#0" expanded="true" />
+            <element signature="e#12286#12327#0" expanded="true" />
+            <element signature="e#12558#12601#0" expanded="true" />
+            <element signature="e#12638#12686#0" expanded="true" />
+            <element signature="e#12720#12803#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -885,11 +793,28 @@
             <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#5905#6378#0" expanded="true" />
-            <element signature="e#6377#6378#0" expanded="true" />
+            <element signature="class#3529:3952" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#3529:3952" expanded="false" />
+            <element signature="e#4246#4342#0" expanded="false" />
+            <element signature="e#7432#7472#0" expanded="true" />
+            <element signature="e#7516#7547#0" expanded="true" />
+            <element signature="e#7725#7996#0" expanded="true" />
+            <element signature="e#7995#7996#0" expanded="true" />
+            <element signature="e#8225#8526#0" expanded="true" />
+            <element signature="e#8525#8526#0" expanded="true" />
+            <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="e#12204#12244#0" expanded="true" />
+            <element signature="e#12286#12327#0" expanded="true" />
+            <element signature="e#12558#12601#0" expanded="true" />
+            <element signature="e#12638#12686#0" expanded="true" />
+            <element signature="e#12720#12803#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -949,20 +874,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-0.63465554" vertical-offset="855" max-vertical-offset="1444">
           <caret line="29" column="47" selection-start-line="29" selection-start-column="47" selection-end-line="29" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/DatePickerFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.4334764" vertical-offset="772" max-vertical-offset="1273">
-          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/SingleFragmentActivity.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="494">
-          <caret line="14" column="28" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
         </state>
       </provider>
     </entry>
@@ -1044,59 +955,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/activity_fragment.xml">
-      <provider editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-      <provider selected="true" editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/crime_list_item_context.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.04" vertical-offset="0" max-vertical-offset="209">
-          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
-          <folding>
-            <element signature="e#226#248#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/fragment_crime_list.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="304">
-          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="5" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/menu/fragment_crime_delete.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="38" max-vertical-offset="228">
-          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.07089552" vertical-offset="0" max-vertical-offset="536">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-14.44" vertical-offset="0" max-vertical-offset="513">
-          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/AndroidManifest.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="72" max-vertical-offset="760">
@@ -1119,21 +977,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2375">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding>
-            <element signature="method#onCreate#0;class#CrimeListFragment#0" expanded="false" />
-            <element signature="method#onCreateOptionsMenu#0;class#CrimeListFragment#0" expanded="false" />
-            <element signature="method#onCreateContextMenu#0;class#CrimeListFragment#0" expanded="false" />
-            <element signature="method#createCrime#0;class#CrimeListFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#CrimeListFragment#0" expanded="false" />
-            <element signature="method#onListItemClick#0;class#CrimeListFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
@@ -1148,61 +991,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="832" max-vertical-offset="1463">
-          <caret line="84" column="17" selection-start-line="84" selection-start-column="17" selection-end-line="84" selection-end-column="17" />
-          <folding>
-            <element signature="e#1921#1922#0" expanded="true" />
-            <element signature="e#1950#1951#0" expanded="true" />
-            <element signature="e#1986#1987#0" expanded="true" />
-            <element signature="e#2010#2011#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/fragment_crime_camera.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-12.0" vertical-offset="274" max-vertical-offset="817">
           <caret line="34" column="18" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout/fragment_crime.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.709678" vertical-offset="60" max-vertical-offset="874">
-          <caret line="19" column="12" selection-start-line="19" selection-start-column="12" selection-end-line="26" selection-end-column="22" />
-          <folding>
-            <element signature="n#LinearLayout#1;n#LinearLayout#0;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="e#1915#1942#0" expanded="true" />
-            <element signature="e#2185#2211#0" expanded="true" />
-            <element signature="n#TextView#0;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="n#Button#0;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="n#CheckBox#0;n#LinearLayout#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="android-designer">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/res/layout-land/fragment_crime.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-11.387096" vertical-offset="103" max-vertical-offset="1007">
-          <caret line="24" column="53" selection-start-line="24" selection-start-column="53" selection-end-line="24" selection-end-column="53" />
-          <folding>
-            <element signature="n#LinearLayout#1;n#LinearLayout#0;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="e#1922#1949#0" expanded="true" />
-            <element signature="e#2192#2218#0" expanded="true" />
-            <element signature="n#TextView#0;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="e#2530#2559#0" expanded="true" />
-            <element signature="n#LinearLayout#1;n#LinearLayout#0;n#!!top" expanded="false" />
-            <element signature="e#3307#3335#0" expanded="true" />
-          </folding>
         </state>
       </provider>
       <provider editor-type-id="android-designer">
@@ -1230,35 +1023,194 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java">
+    <entry file="file://$PROJECT_DIR$/res/menu/fragment_crime_list.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="242" max-vertical-offset="3021">
-          <caret line="25" column="96" selection-start-line="25" selection-start-column="96" selection-end-line="25" selection-end-column="96" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="304">
+          <caret line="10" column="7" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_fragment.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="285">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/crime_list_item_context.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="209">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="44" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#809#967#0" expanded="true" />
-            <element signature="e#966#967#0" expanded="true" />
-            <element signature="e#1020#2238#0" expanded="true" />
-            <element signature="e#2237#2238#0" expanded="true" />
-            <element signature="e#2727#2977#0" expanded="true" />
-            <element signature="e#2976#2977#0" expanded="true" />
+            <element signature="e#226#248#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/ids.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="171">
+          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/fragment_crime_delete.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0656304" vertical-offset="0" max-vertical-offset="579">
+          <caret line="2" column="50" selection-start-line="2" selection-start-column="50" selection-end-line="2" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/DatePickerFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="114" max-vertical-offset="950">
+          <caret line="30" column="85" selection-start-line="30" selection-start-column="85" selection-end-line="30" selection-end-column="85" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/menu/crime_photo_delete_menu.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.164076" vertical-offset="0" max-vertical-offset="579">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="641" max-vertical-offset="2869">
+          <caret line="40" column="35" selection-start-line="40" selection-start-column="35" selection-end-line="40" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="504" max-vertical-offset="1083">
+          <caret line="171" column="56" selection-start-line="171" selection-start-column="19" selection-end-line="171" selection-end-column="56" />
+          <folding>
+            <element signature="method#onCreate#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="method#createCrime#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="class#CrimeAdapter#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="method#onResume#0;class#CrimeListFragment#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#CrimeListFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.84" vertical-offset="130" max-vertical-offset="703">
+          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Crime.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1264" max-vertical-offset="1976">
+          <caret line="92" column="14" selection-start-line="92" selection-start-column="14" selection-end-line="92" selection-end-column="14" />
+          <folding>
+            <element signature="e#2048#2049#0" expanded="true" />
+            <element signature="e#2077#2078#0" expanded="true" />
+            <element signature="e#2638#2639#0" expanded="true" />
+            <element signature="e#2662#2663#0" expanded="true" />
+            <element signature="e#2695#2696#0" expanded="true" />
+            <element signature="e#2726#2727#0" expanded="true" />
+            <element signature="e#2771#2772#0" expanded="true" />
+            <element signature="e#2803#2804#0" expanded="true" />
+            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#2888#2889#0" expanded="true" />
+            <element signature="e#2926#2927#0" expanded="true" />
+            <element signature="e#2962#2963#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/SingleFragmentActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.10575139" vertical-offset="0" max-vertical-offset="539">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/fragment_crime.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1746" max-vertical-offset="2318">
+          <caret line="105" column="14" selection-start-line="105" selection-start-column="14" selection-end-line="105" selection-end-column="14" />
+          <folding>
+            <element signature="e#1921#1948#0" expanded="true" />
+            <element signature="e#2191#2217#0" expanded="true" />
+            <element signature="e#2530#2559#0" expanded="true" />
+            <element signature="e#3068#3096#0" expanded="true" />
+            <element signature="e#3479#3507#0" expanded="true" />
+            <element signature="e#3798#3825#0" expanded="true" />
+            <element signature="e#4114#4136#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout-land/fragment_crime.xml">
+      <provider editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="421" max-vertical-offset="1083">
+          <caret line="125" column="54" selection-start-line="125" selection-start-column="54" selection-end-line="125" selection-end-column="54" />
+          <folding>
+            <element signature="n#LinearLayout#0;n#LinearLayout#0;n#ScrollView#0;n#!!top" expanded="false" />
+            <element signature="n#TextView#0;n#LinearLayout#0;n#ScrollView#0;n#!!top" expanded="false" />
+            <element signature="n#LinearLayout#1;n#LinearLayout#0;n#ScrollView#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9343696" vertical-offset="1283" max-vertical-offset="2812">
-          <caret line="151" column="68" selection-start-line="151" selection-start-column="68" selection-end-line="151" selection-end-column="68" />
+        <state vertical-scroll-proportion="0.4581749" vertical-offset="2837" max-vertical-offset="3496">
+          <caret line="258" column="47" selection-start-line="258" selection-start-column="47" selection-end-line="258" selection-end-column="47" />
           <folding>
             <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#5905#6378#0" expanded="true" />
-            <element signature="e#6377#6378#0" expanded="true" />
+            <element signature="class#3529:3952" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#3529:3952" expanded="false" />
+            <element signature="e#4246#4342#0" expanded="false" />
+            <element signature="e#7432#7472#0" expanded="true" />
+            <element signature="e#7516#7547#0" expanded="true" />
+            <element signature="e#7725#7996#0" expanded="true" />
+            <element signature="e#7995#7996#0" expanded="true" />
+            <element signature="e#8225#8526#0" expanded="true" />
+            <element signature="e#8525#8526#0" expanded="true" />
+            <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
             <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="e#12204#12244#0" expanded="true" />
+            <element signature="e#12286#12327#0" expanded="true" />
+            <element signature="e#12558#12601#0" expanded="true" />
+            <element signature="e#12638#12686#0" expanded="true" />
+            <element signature="e#12720#12803#0" expanded="true" />
           </folding>
         </state>
       </provider>
