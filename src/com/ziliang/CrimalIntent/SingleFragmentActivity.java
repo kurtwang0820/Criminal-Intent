@@ -12,12 +12,15 @@ public abstract class SingleFragmentActivity extends Activity {
     protected abstract Fragment createFragment();
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_fragment);
+        setContentView(getLayoutResId());
         FragmentManager fm=getFragmentManager();
         Fragment fragment=fm.findFragmentById(R.id.fragmentContainer);
         if(fragment==null){
             fragment=createFragment();
             fm.beginTransaction().add(R.id.fragmentContainer,fragment).commit();
         }
+    }
+    protected int getLayoutResId(){
+        return R.layout.activity_fragment;
     }
 }

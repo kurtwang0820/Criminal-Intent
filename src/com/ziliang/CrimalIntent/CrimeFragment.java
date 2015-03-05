@@ -36,6 +36,10 @@ public class CrimeFragment extends Fragment {
     private ImageView mPhotoView;
     private Button mSuspectButton;
     private Button callSuspectButton;
+    private Callbacks mCallbacks;
+    public interface Callbacks{
+        void onCrimeUpdated(Crime crime);
+    }
     public static final String EXTRA_CRIME_ID = "com.ziliang.criminalintent.crime_id";
 //    public static final String DIALOG_DATE = "date";
 //    public static final String DIALOG_TIME = "time";
@@ -99,6 +103,8 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mCrime.setmTitle(s.toString());
+                mCallbacks.onCrimeUpdated(mCrime);
+                getActivity().setTitle(mCrime.getmTitle());
             }
 
             @Override
@@ -130,6 +136,7 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 mCrime.setmSolved(isChecked);
+                mCallbacks.onCrimeUpdated(mCrime);
             }
         });
         mPhotoButton=(ImageButton)v.findViewById(R.id.crime_imageButton);
@@ -222,6 +229,7 @@ public class CrimeFragment extends Fragment {
         if (requestCode == REQUEST_DATE_TIME) {
             Date date = (Date) data.getSerializableExtra(DateOrTimeFragment.DATE_TAG);
             mCrime.setmDate(date);
+            mCallbacks.onCrimeUpdated(mCrime);
             updateDate();
         }else if(requestCode==REQUEST_PHOTO){
             String filename=data.getStringExtra(CrimeCameraFragment.EXTRA_PHOTO_FILENAME);
@@ -230,6 +238,7 @@ public class CrimeFragment extends Fragment {
                 Photo p=new Photo(filename);
                 mCrime.setmPhoto(p);
                 Log.i(TAG,"crime: "+mCrime.getmTitle()+" has a photo");
+                mCallbacks.onCrimeUpdated(mCrime);
                 showPhoto();
             }
         }else if(requestCode==REQUEST_CONTACT){
@@ -259,6 +268,7 @@ public class CrimeFragment extends Fragment {
             }
             callSuspectButton.setEnabled(true);
             cursor.close();
+            mCallbacks.onCrimeUpdated(mCrime);
         }
     }
     @Override
@@ -311,5 +321,15 @@ public class CrimeFragment extends Fragment {
         }
         String report=getString(R.string.crime_report,mCrime.getmTitle(),dateString,solvedString,suspect);
         return report;
+    }
+    @Override
+    public void onAttach(Activity activity){
+        super.onAttach(activity);
+        mCallbacks=(Callbacks)activity;
+    }
+    @Override
+    public void onDetach(){
+        super.onDetach();
+        mCallbacks=null;
     }
 }

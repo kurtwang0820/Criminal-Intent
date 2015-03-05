@@ -1,9 +1,8 @@
 package com.ziliang.CrimalIntent;
 
+import android.app.Activity;
 import android.content.Intent;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
@@ -17,6 +16,10 @@ public class CrimeListFragment extends android.app.ListFragment{
     private ArrayList<Crime> mCrimes;
     private boolean mSubtitleVisible;
     private Button emptyCreateButton;
+    private Callbacks mCallbacks;
+    public interface Callbacks{
+        void onCrimeSelected(Crime crime);
+    }
     private static final String TAG="CrimeListFragment";
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -53,7 +56,10 @@ public class CrimeListFragment extends android.app.ListFragment{
     public boolean onOptionsItemSelected(MenuItem item){
         switch(item.getItemId()){
             case R.id.menu_item_new_crime:
-                createCrime();
+                Crime crime=new Crime();
+                CrimeLab.get(getActivity()).addCrime(crime);
+                ((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
+                mCallbacks.onCrimeSelected(crime);
                 return true;
             case R.id.menu_item_show_subtitle:
                 if(getActivity().getActionBar().getSubtitle()==null) {
@@ -74,9 +80,10 @@ public class CrimeListFragment extends android.app.ListFragment{
     public void onListItemClick(ListView l,View v,int position,long id){
         Crime c=((CrimeAdapter)getListAdapter()).getItem(position);
 //        Log.d(TAG, c.getmTitle() + " was clicked");
-        Intent i = new Intent(getActivity(),CrimePagerActivity.class);
-        i.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getmId());
-        startActivity(i);
+//        Intent i = new Intent(getActivity(),CrimePagerActivity.class);
+//        i.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getmId());
+//        startActivity(i);
+        mCallbacks.onCrimeSelected(c);
     }
     private class CrimeAdapter extends ArrayAdapter<Crime>{
         public CrimeAdapter(ArrayList<Crime> crimes){
@@ -181,5 +188,18 @@ public class CrimeListFragment extends android.app.ListFragment{
                 return true;
         }
         return super.onContextItemSelected(item);
+    }
+    @Override
+    public void onAttach(Activity activity){
+       super.onAttach(activity);
+        mCallbacks=(Callbacks)activity;
+    }
+    @Override
+    public void onDetach(){
+        super.onDetach();
+        mCallbacks=null;
+    }
+    public void updateUI(){
+        ((CrimeAdapter)getListAdapter()).notifyDataSetChanged();
     }
 }
