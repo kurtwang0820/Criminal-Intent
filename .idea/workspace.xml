@@ -34,12 +34,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$9.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CrimalIntent.iws" />
@@ -68,7 +63,7 @@
       <file leaf-file-name="CrimeFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.9660494" vertical-offset="2156" max-vertical-offset="3401">
+            <state vertical-scroll-proportion="-0.94255877" vertical-offset="2204" max-vertical-offset="3401">
               <caret line="188" column="39" selection-start-line="188" selection-start-column="39" selection-end-line="188" selection-end-column="39" />
               <folding>
                 <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
@@ -183,8 +178,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -575,7 +570,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -920,13 +915,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="608">
           <caret line="23" column="25" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#277#278#0" expanded="true" />
-            <element signature="e#316#317#0" expanded="true" />
-            <element signature="e#625#626#0" expanded="true" />
-            <element signature="e#657#658#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -945,10 +933,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="969">
           <caret line="42" column="39" selection-start-line="42" selection-start-column="39" selection-end-line="42" selection-end-column="39" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#319#351#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -956,9 +940,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="143" max-vertical-offset="855">
           <caret line="36" column="46" selection-start-line="36" selection-start-column="46" selection-end-line="36" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1128,7 +1109,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.9660494" vertical-offset="2156" max-vertical-offset="3401">
+        <state vertical-scroll-proportion="-0.94255877" vertical-offset="2204" max-vertical-offset="3401">
           <caret line="188" column="39" selection-start-line="188" selection-start-column="39" selection-end-line="188" selection-end-column="39" />
           <folding>
             <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
