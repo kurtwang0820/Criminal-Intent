@@ -37,44 +37,17 @@ public class CrimeFragment extends Fragment {
     private Button mSuspectButton;
     private Button callSuspectButton;
     private Callbacks mCallbacks;
-    public interface Callbacks{
+
+    public interface Callbacks {
         void onCrimeUpdated(Crime crime);
     }
-    public static final String EXTRA_CRIME_ID = "com.ziliang.criminalintent.crime_id";
-//    public static final String DIALOG_DATE = "date";
-//    public static final String DIALOG_TIME = "time";
-//    public static final int REQUEST_DATE = 0;
-//    public static final int REQUEST_TIME = 1;
+
     private static final int REQUEST_DATE_TIME = 0;
-    private static final int REQUEST_PHOTO=1;
-    private static final int REQUEST_CONTACT=2;
-    private static final String DIALOG_IMAGE="image";
-    private static final String TAG="CrimeFragment";
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        UUID crimeId = (UUID) getArguments().getSerializable(EXTRA_CRIME_ID);
-        mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
-        setHasOptionsMenu(true);
-    }
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch(item.getItemId()){
-            case android.R.id.home:
-                if(NavUtils.getParentActivityName(getActivity())!=null){
-                    NavUtils.navigateUpFromSameTask(getActivity());
-                }
-                return true;
-            case R.id.menu_item_delete_crime:
-                CrimeLab.get(getActivity()).deleteCrime(mCrime);
-                if(NavUtils.getParentActivityName(getActivity())!=null){
-                    NavUtils.navigateUpFromSameTask(getActivity());
-                }
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
-        }
-    }
+    private static final int REQUEST_PHOTO = 1;
+    private static final int REQUEST_CONTACT = 2;
+    private static final String DIALOG_IMAGE = "image";
+    private static final String TAG = "CrimeFragment";
+    public static final String EXTRA_CRIME_ID = "com.ziliang.criminalintent.crime_id";
 
     public static CrimeFragment newInstance(UUID crimeId) {
         Bundle args = new Bundle();
@@ -85,9 +58,17 @@ public class CrimeFragment extends Fragment {
     }
 
     @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        UUID crimeId = (UUID) getArguments().getSerializable(EXTRA_CRIME_ID);
+        mCrime = CrimeLab.get(getActivity()).getCrime(crimeId);
+        setHasOptionsMenu(true);
+    }
+
+    @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
-        if(NavUtils.getParentActivityName(getActivity())!=null) {
+        if (NavUtils.getParentActivityName(getActivity()) != null) {
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                 getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
             }
@@ -139,81 +120,107 @@ public class CrimeFragment extends Fragment {
                 mCallbacks.onCrimeUpdated(mCrime);
             }
         });
-        mPhotoButton=(ImageButton)v.findViewById(R.id.crime_imageButton);
+        mPhotoButton = (ImageButton) v.findViewById(R.id.crime_imageButton);
         mPhotoButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(getActivity(),CrimeCameraActivity.class);
-                startActivityForResult(i,REQUEST_PHOTO);
+                Intent i = new Intent(getActivity(), CrimeCameraActivity.class);
+                startActivityForResult(i, REQUEST_PHOTO);
             }
         });
-        PackageManager pm=getActivity().getPackageManager();
-        boolean hasCamera=pm.hasSystemFeature(PackageManager.FEATURE_CAMERA)||pm.hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT)|| Camera.getNumberOfCameras()>0;
-        if(!hasCamera){
+        PackageManager pm = getActivity().getPackageManager();
+        boolean hasCamera = pm.hasSystemFeature(PackageManager.FEATURE_CAMERA) || pm.hasSystemFeature(PackageManager.FEATURE_CAMERA_FRONT) || Camera.getNumberOfCameras() > 0;
+        if (!hasCamera) {
             mPhotoButton.setEnabled(false);
         }
-        mPhotoView=(ImageView)v.findViewById(R.id.crime_imageView);
+        mPhotoView = (ImageView) v.findViewById(R.id.crime_imageView);
         mPhotoView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Photo p=mCrime.getmPhoto();
-                if(p==null){
+                Photo p = mCrime.getmPhoto();
+                if (p == null) {
                     return;
                 }
-                FragmentManager fm=getActivity().getFragmentManager();
-                String path=getActivity().getFileStreamPath(p.getFilename()).getAbsolutePath();
-                ImageFragment.newInstance(path).show(fm,DIALOG_IMAGE);
+                FragmentManager fm = getActivity().getFragmentManager();
+                String path = getActivity().getFileStreamPath(p.getFilename()).getAbsolutePath();
+                ImageFragment.newInstance(path).show(fm, DIALOG_IMAGE);
             }
         });
         mPhotoView.setOnCreateContextMenuListener(new View.OnCreateContextMenuListener() {
             @Override
             public void onCreateContextMenu(ContextMenu menu, View v, ContextMenu.ContextMenuInfo menuInfo) {
-                if(mCrime.getmPhoto()!=null){
-                    getActivity().getMenuInflater().inflate(R.menu.crime_photo_delete_menu,menu);
+                if (mCrime.getmPhoto() != null) {
+                    getActivity().getMenuInflater().inflate(R.menu.crime_photo_delete_menu, menu);
                 }
             }
         });
-        Button reportButton=(Button)v.findViewById(R.id.crime_reportButton);
+        Button reportButton = (Button) v.findViewById(R.id.crime_reportButton);
         reportButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(Intent.ACTION_SEND);
+                Intent i = new Intent(Intent.ACTION_SEND);
                 i.setType("text/plain");
                 i.putExtra(Intent.EXTRA_TEXT, getCrimeReport());
-                i.putExtra(Intent.EXTRA_SUBJECT,getString(R.string.crime_report_subject));
-                i=Intent.createChooser(i,getString(R.string.send_report));
+                i.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.crime_report_subject));
+                i = Intent.createChooser(i, getString(R.string.send_report));
                 startActivity(i);
             }
         });
-        mSuspectButton=(Button)v.findViewById(R.id.crime_suspectButton);
+        mSuspectButton = (Button) v.findViewById(R.id.crime_suspectButton);
         mSuspectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i=new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-                startActivityForResult(i,REQUEST_CONTACT);
+                Intent i = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+                startActivityForResult(i, REQUEST_CONTACT);
             }
         });
-        if(mCrime.getmSuspect()!=null){
+        if (mCrime.getmSuspect() != null) {
             mSuspectButton.setText(mCrime.getmSuspect());
         }
 
-        callSuspectButton=(Button)v.findViewById(R.id.crime_callButton);
+        callSuspectButton = (Button) v.findViewById(R.id.crime_callButton);
         callSuspectButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                String uri="tel:"+mCrime.getSuspectNumber();
-                Intent dialIntent=new Intent(Intent.ACTION_DIAL,Uri.parse(uri));
+                String uri = "tel:" + mCrime.getSuspectNumber();
+                Intent dialIntent = new Intent(Intent.ACTION_DIAL, Uri.parse(uri));
                 startActivity(dialIntent);
             }
         });
-        if(mCrime.getSuspectNumber()!=null){
+        if (mCrime.getSuspectNumber() != null) {
             callSuspectButton.setEnabled(true);
         }
         return v;
     }
+
     @Override
-    public boolean onContextItemSelected(MenuItem item){
-        switch(item.getItemId()){
+    public void onCreateOptionsMenu(Menu menu, MenuInflater inflater) {
+        super.onCreateOptionsMenu(menu, inflater);
+        inflater.inflate(R.menu.fragment_crime_delete, menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case android.R.id.home:
+                if (NavUtils.getParentActivityName(getActivity()) != null) {
+                    NavUtils.navigateUpFromSameTask(getActivity());
+                }
+                return true;
+            case R.id.menu_item_delete_crime:
+                CrimeLab.get(getActivity()).deleteCrime(mCrime);
+                if (NavUtils.getParentActivityName(getActivity()) != null) {
+                    NavUtils.navigateUpFromSameTask(getActivity());
+                }
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public boolean onContextItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
             case R.id.crime_photo_delete:
                 mCrime.setmPhoto(null);
                 showPhoto();
@@ -221,6 +228,7 @@ public class CrimeFragment extends Fragment {
         }
         return super.onContextItemSelected(item);
     }
+
     @Override
     public void onActivityResult(int requestCode, int resultCode, Intent data) {
         if (resultCode != Activity.RESULT_OK) {
@@ -231,26 +239,26 @@ public class CrimeFragment extends Fragment {
             mCrime.setmDate(date);
             mCallbacks.onCrimeUpdated(mCrime);
             updateDate();
-        }else if(requestCode==REQUEST_PHOTO){
-            String filename=data.getStringExtra(CrimeCameraFragment.EXTRA_PHOTO_FILENAME);
-            if(filename!=null){
+        } else if (requestCode == REQUEST_PHOTO) {
+            String filename = data.getStringExtra(CrimeCameraFragment.EXTRA_PHOTO_FILENAME);
+            if (filename != null) {
                 Log.i(TAG, "filename: " + filename);
-                Photo p=new Photo(filename);
+                Photo p = new Photo(filename);
                 mCrime.setmPhoto(p);
-                Log.i(TAG,"crime: "+mCrime.getmTitle()+" has a photo");
+                Log.i(TAG, "crime: " + mCrime.getmTitle() + " has a photo");
                 mCallbacks.onCrimeUpdated(mCrime);
                 showPhoto();
             }
-        }else if(requestCode==REQUEST_CONTACT){
-            Uri contactUri=data.getData();
-            String[] queryFields=new String[]{ContactsContract.Contacts.DISPLAY_NAME};
-            Cursor c=getActivity().getContentResolver().query(contactUri,queryFields,null,null,null);
-            if(c.getCount()==0){
+        } else if (requestCode == REQUEST_CONTACT) {
+            Uri contactUri = data.getData();
+            String[] queryFields = new String[]{ContactsContract.Contacts.DISPLAY_NAME};
+            Cursor c = getActivity().getContentResolver().query(contactUri, queryFields, null, null, null);
+            if (c.getCount() == 0) {
                 c.close();
                 return;
             }
             c.moveToFirst();
-            String suspect=c.getString(0);
+            String suspect = c.getString(0);
             mCrime.setmSuspect(suspect);
             mSuspectButton.setText(suspect);
             c.close();
@@ -258,78 +266,81 @@ public class CrimeFragment extends Fragment {
             //get phone number
             String id = contactUri.getLastPathSegment();
             Cursor cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "=?", new String[]{id}, null);
-            if(cursor.getCount()==0){
+            if (cursor.getCount() == 0) {
                 cursor.close();
                 return;
             }
             int phoneIdx = cursor.getColumnIndex(ContactsContract.CommonDataKinds.Phone.DATA);
             if (cursor.moveToFirst()) {
-                    mCrime.setSuspectNumber(cursor.getString(phoneIdx));
+                mCrime.setSuspectNumber(cursor.getString(phoneIdx));
             }
             callSuspectButton.setEnabled(true);
             cursor.close();
             mCallbacks.onCrimeUpdated(mCrime);
         }
     }
+
     @Override
-    public void onStop(){
+    public void onStop() {
         super.onStop();
         PictureUtils.cleanImageView(mPhotoView);
     }
+
     @Override
-    public void onStart(){
+    public void onStart() {
         super.onStart();
         showPhoto();
     }
+
     @Override
-    public void onPause(){
+    public void onPause() {
         super.onPause();
         CrimeLab.get(getActivity()).saveCrimes();
     }
+
+    @Override
+    public void onAttach(Activity activity) {
+        super.onAttach(activity);
+        mCallbacks = (Callbacks) activity;
+    }
+
+    @Override
+    public void onDetach() {
+        super.onDetach();
+        mCallbacks = null;
+    }
+
     public void updateDate() {
         String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(mCrime.getmDate());
         mDateButton.setText(dateString);
     }
-    @Override
-    public void onCreateOptionsMenu(Menu menu,MenuInflater inflater){
-        super.onCreateOptionsMenu(menu,inflater);
-        inflater.inflate(R.menu.fragment_crime_delete,menu);
-    }
-    private void showPhoto(){
-        Photo p=mCrime.getmPhoto();
-        BitmapDrawable b=null;
-        if(p!=null){
-            String path=getActivity().getFileStreamPath(p.getFilename()).getAbsolutePath();
-            b=PictureUtils.getScaledDrawable(getActivity(),path);
+
+    private void showPhoto() {
+        Photo p = mCrime.getmPhoto();
+        BitmapDrawable b = null;
+        if (p != null) {
+            String path = getActivity().getFileStreamPath(p.getFilename()).getAbsolutePath();
+            b = PictureUtils.getScaledDrawable(getActivity(), path);
         }
         mPhotoView.setImageDrawable(b);
     }
-    private String getCrimeReport(){
-        String solvedString=null;
-        if(mCrime.ismSolved()){
-            solvedString=getString(R.string.crimre_report_solved);
-        }else{
-            solvedString=getString(R.string.crime_report_unsolved);
+
+    private String getCrimeReport() {
+        String solvedString = null;
+        if (mCrime.ismSolved()) {
+            solvedString = getString(R.string.crimre_report_solved);
+        } else {
+            solvedString = getString(R.string.crime_report_unsolved);
         }
-        String dateFormat="EEE, MMM dd";
-        String dateString=DateFormat.format(dateFormat,mCrime.getmDate()).toString();
-        String suspect=mCrime.getmSuspect();
-        if(suspect==null){
-            suspect=getString(R.string.crime_report_no_suspect);
-        }else{
-            suspect=getString(R.string.crime_report_suspect,suspect);
+        String dateFormat = "EEE, MMM dd";
+        String dateString = DateFormat.format(dateFormat, mCrime.getmDate()).toString();
+        String suspect = mCrime.getmSuspect();
+        if (suspect == null) {
+            suspect = getString(R.string.crime_report_no_suspect);
+        } else {
+            suspect = getString(R.string.crime_report_suspect, suspect);
         }
-        String report=getString(R.string.crime_report,mCrime.getmTitle(),dateString,solvedString,suspect);
+        String report = getString(R.string.crime_report, mCrime.getmTitle(), dateString, solvedString, suspect);
         return report;
-    }
-    @Override
-    public void onAttach(Activity activity){
-        super.onAttach(activity);
-        mCallbacks=(Callbacks)activity;
-    }
-    @Override
-    public void onDetach(){
-        super.onDetach();
-        mCallbacks=null;
     }
 }

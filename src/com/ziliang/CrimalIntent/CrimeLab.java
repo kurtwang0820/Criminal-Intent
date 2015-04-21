@@ -11,17 +11,23 @@ import java.util.UUID;
  */
 public class CrimeLab {
     private static CrimeLab sCrimeLab;
+    private static final String FILENAME = "crimes.json";
+    private CriminalIntentJSONSerializer mSerializer;
     private Context mAppContext;
     private ArrayList<Crime> mCrimes;
-    private CrimeLab(Context appContext){
-        mAppContext=appContext;
-        mSerializer=new CriminalIntentJSONSerializer(mAppContext,FILENAME);
-        try{
-            mCrimes=mSerializer.loadCrimes();
-        }catch (Exception e){
-            mCrimes=new ArrayList<Crime>();
-            Log.e(TAG,"Error loading crimes: ",e);
+    //private static final String TAG = "CrimeLab";
+
+    //try to load the crime list first, if it doesn't exist, we will create a empty crime list
+    private CrimeLab(Context appContext) {
+        mAppContext = appContext;
+        mSerializer = new CriminalIntentJSONSerializer(mAppContext, FILENAME);
+        try {
+            mCrimes = mSerializer.loadCrimes();
+        } catch (Exception e) {
+            mCrimes = new ArrayList<Crime>();
+//            Log.e(TAG, "Error loading crimes: ", e);
         }
+        //for test use
 //        for(int i=0;i<100;i++){
 //            Crime c=new Crime();
 //            c.setmTitle("Crime #"+i);
@@ -29,40 +35,49 @@ public class CrimeLab {
 //            mCrimes.add(c);
 //        }
     }
-    public ArrayList<Crime> getmCrimes(){
+
+    //singleton design pattern
+    public static CrimeLab get(Context c) {
+        if (sCrimeLab == null) {
+            sCrimeLab = new CrimeLab(c.getApplicationContext());
+        }
+        return sCrimeLab;
+    }
+
+    //get list of crimes
+    public ArrayList<Crime> getmCrimes() {
         return mCrimes;
     }
-    public Crime getCrime(UUID id){
-        for(Crime c:mCrimes){
-            if(c.getmId().equals(id)){
+
+    //get a crime from the list by its unique ID
+    public Crime getCrime(UUID id) {
+        for (Crime c : mCrimes) {
+            if (c.getmId().equals(id)) {
                 return c;
             }
         }
         return null;
     }
-    public static CrimeLab get(Context c){
-        if(sCrimeLab==null){
-            sCrimeLab=new CrimeLab(c.getApplicationContext());
-        }
-        return sCrimeLab;
-    }
-    public void addCrime(Crime c){
+
+    //add a crime to the list
+    public void addCrime(Crime c) {
         mCrimes.add(c);
     }
-    private static final String TAG="CrimeLab";
-    private static final String FILENAME="crimes.json";
-    private CriminalIntentJSONSerializer mSerializer;
-    public boolean saveCrimes(){
-        try{
+
+    //serialize all the crimes and save them
+    public boolean saveCrimes() {
+        try {
             mSerializer.saveCrimes(mCrimes);
-            Log.d(TAG, "crimes saved to file");
+//            Log.d(TAG, "crimes saved to file");
             return true;
-        }catch(Exception e){
-            Log.e(TAG,"Error saving crimes: ",e);
+        } catch (Exception e) {
+//            Log.e(TAG,"Error saving crimes: ",e);
             return false;
         }
     }
-    public void deleteCrime(Crime c){
+
+    //delete a crime from the list
+    public void deleteCrime(Crime c) {
         mCrimes.remove(c);
     }
 }
