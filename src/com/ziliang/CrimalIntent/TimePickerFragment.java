@@ -14,6 +14,7 @@ import java.util.Date;
 import java.util.GregorianCalendar;
 
 /**
+ * a dialog fragment which let the user choose the exact time when the crime happens
  * Created by Kurt on 2/11/2015.
  */
 public class TimePickerFragment extends DialogFragment {
@@ -55,6 +56,8 @@ public class TimePickerFragment extends DialogFragment {
             }
         }).create();
     }
+
+    //send time information to target fragment
     private void sendResult(int resultCode){
         if(getTargetFragment()==null){
             return;

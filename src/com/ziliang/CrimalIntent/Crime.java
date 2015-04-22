@@ -7,6 +7,7 @@ import java.util.Date;
 import java.util.UUID;
 
 /**
+ * single crime object
  * Created by Kurt on 2/9/2015.
  */
 public class Crime {

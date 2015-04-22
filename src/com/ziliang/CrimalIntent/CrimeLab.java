@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
+ * a crime pool which keeps  all the crimes in record
  * Created by Kurt on 2/9/2015.
  */
 public class CrimeLab {

@@ -11,9 +11,10 @@ import java.util.ArrayList;
 import java.util.UUID;
 
 /**
+ * a pager which let user to slide between different crimes
  * Created by Kurt on 2/10/2015.
  */
-public class CrimePagerActivity extends Activity implements CrimeFragment.Callbacks{
+public class CrimePagerActivity extends Activity{
     private ViewPager mViewPager;
     private ArrayList<Crime> mCrimes;
     @Override
@@ -62,9 +63,5 @@ public class CrimePagerActivity extends Activity implements CrimeFragment.Callba
 
             }
         });
-    }
-    @Override
-    public void onCrimeUpdated(Crime crime){
-
     }
 }

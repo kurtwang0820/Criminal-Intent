@@ -9,6 +9,7 @@ import android.view.View;
 import java.util.Date;
 
 /**
+ * a dialog fragment which let the user to choose to change date or time
  * Created by Kurt on 2/11/2015.
  */
 public class DateOrTimeFragment extends DialogFragment {
@@ -52,16 +53,19 @@ public class DateOrTimeFragment extends DialogFragment {
         });
         return builder.create();
     }
+
     @Override
     public void onActivityResult(int requestCode,int resultCode,Intent data){
         if(resultCode!= Activity.RESULT_OK){
             return;
         }
         if(requestCode==REQUEST_DATE||requestCode==REQUEST_TIME){
-            mDate=(Date)data.getSerializableExtra(DateOrTimeFragment.EXTRA_DATE_TIME);
+            mDate=(Date)data.getSerializableExtra(EXTRA_DATE_TIME);
             sendResult(Activity.RESULT_OK);
         }
     }
+
+    //send result to target fragment
     private void sendResult(int resultCode){
         if(getTargetFragment()==null){
             return;

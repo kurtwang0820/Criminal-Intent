@@ -6,6 +6,7 @@ import android.app.FragmentManager;
 import android.os.Bundle;
 
 /**
+ * an abstract activity template
  * Created by Kurt on 2/9/2015.
  */
 public abstract class SingleFragmentActivity extends Activity {
