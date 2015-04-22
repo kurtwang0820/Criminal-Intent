@@ -183,10 +183,11 @@ public class CrimeListFragment extends android.app.ListFragment {
         mCallbacks = null;
     }
 
-    public void updateUI() {
-        ((CrimeAdapter) getListAdapter()).notifyDataSetChanged();
-    }
+//    public void updateUI() {
+//        ((CrimeAdapter) getListAdapter()).notifyDataSetChanged();
+//    }
 
+    //create a crime, start CrimePagerActivity
     private void createCrime() {
         Crime crime = new Crime();
         CrimeLab.get(getActivity()).addCrime(crime);

@@ -20,6 +20,7 @@ import android.util.Log;
 import android.view.*;
 import android.widget.*;
 
+import java.io.File;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.UUID;
@@ -36,11 +37,11 @@ public class CrimeFragment extends Fragment {
     private ImageView mPhotoView;
     private Button mSuspectButton;
     private Button callSuspectButton;
-    private Callbacks mCallbacks;
+//    private Callbacks mCallbacks;
 
-    public interface Callbacks {
-        void onCrimeUpdated(Crime crime);
-    }
+//    public interface Callbacks {
+//        void onCrimeUpdated(Crime crime);
+//    }
 
     private static final int REQUEST_DATE_TIME = 0;
     private static final int REQUEST_PHOTO = 1;
@@ -69,9 +70,9 @@ public class CrimeFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View v = inflater.inflate(R.layout.fragment_crime, container, false);
         if (NavUtils.getParentActivityName(getActivity()) != null) {
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+//            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
                 getActivity().getActionBar().setDisplayHomeAsUpEnabled(true);
-            }
+//            }
         }
         mTitleField = (EditText) v.findViewById(R.id.crime_title);
         mTitleField.setText(mCrime.getmTitle());
@@ -84,7 +85,7 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
                 mCrime.setmTitle(s.toString());
-                mCallbacks.onCrimeUpdated(mCrime);
+//                mCallbacks.onCrimeUpdated(mCrime);
                 getActivity().setTitle(mCrime.getmTitle());
             }
 
@@ -117,7 +118,7 @@ public class CrimeFragment extends Fragment {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 mCrime.setmSolved(isChecked);
-                mCallbacks.onCrimeUpdated(mCrime);
+//                mCallbacks.onCrimeUpdated(mCrime);
             }
         });
         mPhotoButton = (ImageButton) v.findViewById(R.id.crime_imageButton);
@@ -222,7 +223,7 @@ public class CrimeFragment extends Fragment {
     public boolean onContextItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.crime_photo_delete:
-                mCrime.setmPhoto(null);
+                deletePhoto();
                 showPhoto();
                 return true;
         }
@@ -237,16 +238,17 @@ public class CrimeFragment extends Fragment {
         if (requestCode == REQUEST_DATE_TIME) {
             Date date = (Date) data.getSerializableExtra(DateOrTimeFragment.DATE_TAG);
             mCrime.setmDate(date);
-            mCallbacks.onCrimeUpdated(mCrime);
+//            mCallbacks.onCrimeUpdated(mCrime);
             updateDate();
         } else if (requestCode == REQUEST_PHOTO) {
             String filename = data.getStringExtra(CrimeCameraFragment.EXTRA_PHOTO_FILENAME);
             if (filename != null) {
+                deletePhoto();
                 Log.i(TAG, "filename: " + filename);
                 Photo p = new Photo(filename);
                 mCrime.setmPhoto(p);
                 Log.i(TAG, "crime: " + mCrime.getmTitle() + " has a photo");
-                mCallbacks.onCrimeUpdated(mCrime);
+//                mCallbacks.onCrimeUpdated(mCrime);
                 showPhoto();
             }
         } else if (requestCode == REQUEST_CONTACT) {
@@ -276,7 +278,7 @@ public class CrimeFragment extends Fragment {
             }
             callSuspectButton.setEnabled(true);
             cursor.close();
-            mCallbacks.onCrimeUpdated(mCrime);
+//            mCallbacks.onCrimeUpdated(mCrime);
         }
     }
 
@@ -301,20 +303,22 @@ public class CrimeFragment extends Fragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        mCallbacks = (Callbacks) activity;
+//        mCallbacks = (Callbacks) activity;
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mCallbacks = null;
+//        mCallbacks = null;
     }
 
+    //after we choose the date, update the date on the button
     public void updateDate() {
         String dateString = new SimpleDateFormat("yyyy-MM-dd HH:mm").format(mCrime.getmDate());
         mDateButton.setText(dateString);
     }
 
+    //show photo in thumbnail imageView
     private void showPhoto() {
         Photo p = mCrime.getmPhoto();
         BitmapDrawable b = null;
@@ -325,6 +329,7 @@ public class CrimeFragment extends Fragment {
         mPhotoView.setImageDrawable(b);
     }
 
+    //get detailed crime report
     private String getCrimeReport() {
         String solvedString = null;
         if (mCrime.ismSolved()) {
@@ -342,5 +347,18 @@ public class CrimeFragment extends Fragment {
         }
         String report = getString(R.string.crime_report, mCrime.getmTitle(), dateString, solvedString, suspect);
         return report;
+    }
+
+    //delete photo from your device
+    private boolean deletePhoto() {
+        if (mCrime.getmPhoto() == null)
+            return false;
+        String path = getActivity().getFileStreamPath(
+                mCrime.getmPhoto().getFilename()).getAbsolutePath();
+        File f = new File(path);
+        f.delete();
+        mCrime.setmPhoto(null);
+        PictureUtils.cleanImageView(mPhotoView);
+        return true;
     }
 }

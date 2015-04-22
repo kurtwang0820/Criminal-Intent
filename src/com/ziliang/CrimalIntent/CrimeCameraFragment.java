@@ -23,7 +23,7 @@ public class CrimeCameraFragment extends Fragment {
     private Camera mCamera;
     private SurfaceView mSurfaceView;
     private View mProgressContainer;
-    public static final String EXTRA_PHOTO_FILENAME="com.ziliang.criminalintent.photo_filename";
+    public static final String EXTRA_PHOTO_FILENAME = "com.ziliang.criminalintent.photo_filename";
     private Camera.ShutterCallback mShutterCallback = new Camera.ShutterCallback() {
         @Override
         public void onShutter() {
@@ -47,22 +47,21 @@ public class CrimeCameraFragment extends Fragment {
                         os.close();
                     }
                 } catch (Exception e) {
-                    Log.e(TAG,"Error closing file"+filename,e);
-                    success=false;
+                    Log.e(TAG, "Error closing file" + filename, e);
+                    success = false;
                 }
             }
-            if(success) {
+            if (success) {
                 Log.i(TAG, "JPEG saved at " + filename);
-                Intent i=new Intent();
-                i.putExtra(EXTRA_PHOTO_FILENAME,filename);
-                getActivity().setResult(Activity.RESULT_OK,i);
-            }else{
+                Intent i = new Intent();
+                i.putExtra(EXTRA_PHOTO_FILENAME, filename);
+                getActivity().setResult(Activity.RESULT_OK, i);
+            } else {
                 getActivity().setResult(Activity.RESULT_CANCELED);
             }
             getActivity().finish();
         }
     };
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -73,7 +72,7 @@ public class CrimeCameraFragment extends Fragment {
         takePcitureButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                if(mCamera!=null) {
+                if (mCamera != null) {
                     mCamera.takePicture(mShutterCallback, null, mJpegCallback);
                 }
             }
@@ -100,8 +99,8 @@ public class CrimeCameraFragment extends Fragment {
                 Camera.Parameters parameters = mCamera.getParameters();
                 Camera.Size s = getBestSupportedSize(parameters.getSupportedPreviewSizes(), width, height);
                 parameters.setPreviewSize(s.width, s.height);
-                s=getBestSupportedSize(parameters.getSupportedPictureSizes(),width,height);
-                parameters.setPictureSize(s.width,s.height);
+                s = getBestSupportedSize(parameters.getSupportedPictureSizes(), width, height);
+                parameters.setPictureSize(s.width, s.height);
                 mCamera.setParameters(parameters);
                 try {
                     mCamera.startPreview();
@@ -110,7 +109,6 @@ public class CrimeCameraFragment extends Fragment {
                     mCamera.release();
                     mCamera = null;
                 }
-
             }
 
             @Override
@@ -121,19 +119,6 @@ public class CrimeCameraFragment extends Fragment {
             }
         });
         return v;
-    }
-
-    private Camera.Size getBestSupportedSize(List<Camera.Size> sizes, int width, int height) {
-        Camera.Size bestSize = sizes.get(0);
-        int largestArea = bestSize.width * bestSize.height;
-        for (Camera.Size s : sizes) {
-            int area = s.width * s.height;
-            if (area > largestArea) {
-                largestArea = area;
-                bestSize = s;
-            }
-        }
-        return bestSize;
     }
 
     @Override
@@ -149,5 +134,19 @@ public class CrimeCameraFragment extends Fragment {
             mCamera.release();
             mCamera = null;
         }
+    }
+
+    //get the best image size for current device
+    private Camera.Size getBestSupportedSize(List<Camera.Size> sizes, int width, int height) {
+        Camera.Size bestSize = sizes.get(0);
+        int largestArea = bestSize.width * bestSize.height;
+        for (Camera.Size s : sizes) {
+            int area = s.width * s.height;
+            if (area > largestArea) {
+                largestArea = area;
+                bestSize = s;
+            }
+        }
+        return bestSize;
     }
 }

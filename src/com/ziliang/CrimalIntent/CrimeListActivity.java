@@ -8,7 +8,7 @@ import android.content.Intent;
 /**
  * Created by Kurt on 2/9/2015.
  */
-public class CrimeListActivity extends SingleFragmentActivity implements CrimeListFragment.Callbacks,CrimeFragment.Callbacks{
+public class CrimeListActivity extends SingleFragmentActivity implements CrimeListFragment.Callbacks{
     @Override
     protected Fragment createFragment() {
         return new CrimeListFragment();
@@ -35,10 +35,10 @@ public class CrimeListActivity extends SingleFragmentActivity implements CrimeLi
             ft.commit();
         }
     }
-    @Override
-    public void onCrimeUpdated(Crime crime){
-        FragmentManager fm=getFragmentManager();
-        CrimeListFragment listFragment=(CrimeListFragment)fm.findFragmentById(R.id.fragmentContainer);
-        listFragment.updateUI();
-    }
+//    @Override
+//    public void onCrimeUpdated(Crime crime){
+//        FragmentManager fm=getFragmentManager();
+//        CrimeListFragment listFragment=(CrimeListFragment)fm.findFragmentById(R.id.fragmentContainer);
+//        listFragment.updateUI();
+//    }
 }

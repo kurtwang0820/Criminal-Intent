@@ -10,9 +10,11 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 
 /**
+ * to show the original photo
  * Created by Kurt on 3/4/2015.
  */
 public class ImageFragment extends DialogFragment{
+    private ImageView mImageView;
     public static final String EXTRA_IMAGE_PATH="com.ziliang.criminalintent.image_path";
     public static ImageFragment newInstance(String imagePath){
         Bundle args=new Bundle();
@@ -22,7 +24,6 @@ public class ImageFragment extends DialogFragment{
         fragment.setStyle(DialogFragment.STYLE_NO_TITLE,0);
         return fragment;
     }
-    private ImageView mImageView;
     @Override
     public View onCreateView(LayoutInflater inflater,ViewGroup parent,Bundle savedInstanceState){
         mImageView=new ImageView(getActivity());
