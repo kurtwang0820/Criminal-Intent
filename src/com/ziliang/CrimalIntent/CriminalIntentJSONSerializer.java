@@ -9,7 +9,8 @@ import java.io.*;
 import java.util.ArrayList;
 
 /**
- * Created by kurtw_000 on 2015/2/19.
+ * JSON serializer which can serialize a list of crimes object to json
+ * Created by Kurt on 2015/2/19.
  */
 public class CriminalIntentJSONSerializer {
     private Context mContext;
@@ -18,6 +19,8 @@ public class CriminalIntentJSONSerializer {
         mContext=c;
         mFilename=f;
     }
+
+    //save a list of crimes to a file
     public void saveCrimes(ArrayList<Crime> crimes) throws JSONException,IOException{
         JSONArray array=new JSONArray();
         for(Crime c:crimes){
@@ -34,6 +37,8 @@ public class CriminalIntentJSONSerializer {
             }
         }
     }
+
+    //load a list of crimes from file
     public ArrayList<Crime> loadCrimes() throws IOException,JSONException{
         ArrayList<Crime> crimes=new ArrayList<Crime>();
         BufferedReader reader=null;
