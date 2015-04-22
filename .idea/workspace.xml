@@ -37,7 +37,78 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\CrimalIntent.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\CrimalIntent.unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\Crime.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeLab.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeListFragment$CrimeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\CrimeListFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CrimalIntent\com\ziliang\CrimalIntent\SingleFragmentActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\CriminalIntent.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\CriminalIntent.unaligned.apk" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\BuildConfig.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\Crime.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraFragment$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraFragment$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeCameraFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$3.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$4.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$5.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$6.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$7.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$8.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$9.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment$Callbacks.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeLab.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListFragment$Callbacks.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListFragment$CrimeAdapter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimeListFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimePagerActivity$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimePagerActivity$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CrimePagerActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\CriminalIntentJSONSerializer.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DateOrTimeFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DateOrTimeFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DateOrTimeFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DatePickerFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DatePickerFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\DatePickerFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\ImageFragment.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\Photo.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\PictureUtils.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$attr.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$drawable.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$id.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$layout.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$menu.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R$string.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\R.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\SingleFragmentActivity.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\TimePickerFragment$1.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\TimePickerFragment$2.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Kurt\Documents\GitHub\CriminalIntent\out\production\CriminalIntent\com\ziliang\CrimalIntent\TimePickerFragment.class" afterPath="" />
     </list>
     <ignored path="CrimalIntent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -163,110 +234,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="values" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="menu" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="layout" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CrimalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CriminalIntent" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="res" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="drawable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
