@@ -267,7 +267,8 @@ public class CrimeFragment extends Fragment {
 
             //get phone number
             String id = contactUri.getLastPathSegment();
-            Cursor cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null, ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "=?", new String[]{id}, null);
+            Cursor cursor = getActivity().getContentResolver().query(ContactsContract.CommonDataKinds.Phone.CONTENT_URI, null,
+                    ContactsContract.CommonDataKinds.Phone.CONTACT_ID + "=?", new String[]{id}, null);
             if (cursor.getCount() == 0) {
                 cursor.close();
                 return;

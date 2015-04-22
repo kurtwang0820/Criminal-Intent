@@ -37,54 +37,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbc22850-1fdd-4532-8055-778d87d06acb" name="Default" comment="add time picker fragment(draft version)">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Crime.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Crime.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeActivity.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$3.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$4.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeCameraFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$3.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$3.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$4.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$4.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$5.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$5.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$6.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$6.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$7.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$7.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$8.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$8.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$9.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment$9.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeLab.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeLab.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$CrimeAdapter.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment$CrimeAdapter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimeListFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CrimePagerActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.unaligned.apk" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/CriminalIntent.unaligned.apk" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CriminalIntentJSONSerializer.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/CriminalIntentJSONSerializer.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DateOrTimeFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/DatePickerFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/ImageFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/ImageFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Photo.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/Photo.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/PictureUtils.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/PictureUtils.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/SingleFragmentActivity.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/SingleFragmentActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment$1.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment$2.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment$2.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment.class" afterPath="$PROJECT_DIR$/out/production/CriminalIntent/com/ziliang/CrimalIntent/TimePickerFragment.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/AndroidManifest.xml" afterPath="$PROJECT_DIR$/AndroidManifest.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListActivity.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListActivity.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java" afterPath="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="CrimalIntent.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,40 +61,7 @@
     <favorites_list name="CrimalIntent" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="ImageFragment.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
-              <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Photo.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-              <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PictureUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/PictureUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.026499303" vertical-offset="171" max-vertical-offset="1007">
-              <caret line="10" column="168" selection-start-line="10" selection-start-column="168" selection-end-line="10" selection-end-column="168" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="GenerateSignedApkSettings">
     <option name="KEY_STORE_PATH" value="E:\workspace\criminalIntent.jks" />
@@ -194,8 +114,8 @@
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListActivity.java" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeCameraFragment.java" />
-        <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
         <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java" />
+        <option value="$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java" />
       </list>
     </option>
   </component>
@@ -275,6 +195,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CrimalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CriminalIntent" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="values" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -380,7 +318,7 @@
     <property name="AndroidRunProguardForReleaseBuild" value="false" />
     <property name="dynamic.classpath" value="false" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager2.SHOW" value="false" />
-    <property name="options.lastSelected" value="preferences.keymap" />
+    <property name="options.lastSelected" value="preferences.editor" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
   </component>
@@ -625,7 +563,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -643,7 +581,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Android" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5294906" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19087404" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19087404" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
       <window_info id="Memory Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -846,14 +784,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.04" vertical-offset="0" max-vertical-offset="703">
-          <caret line="29" column="44" selection-start-line="29" selection-start-column="44" selection-end-line="29" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/res/layout/activity_fragment.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.516129" vertical-offset="0" max-vertical-offset="285">
@@ -1048,49 +978,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.0255681" vertical-offset="0" max-vertical-offset="1634">
-          <caret line="222" column="56" selection-start-line="222" selection-start-column="56" selection-end-line="222" selection-end-column="56" />
-          <folding>
-            <element signature="docComment;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#1112#1147#0" expanded="false" />
-            <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onCreateView#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="e#3426#4277#0" expanded="true" />
-            <element signature="e#3592#3688#0" expanded="false" />
-            <element signature="e#4276#4277#0" expanded="true" />
-            <element signature="e#4459#4739#0" expanded="true" />
-            <element signature="e#4738#4739#0" expanded="true" />
-            <element signature="e#4859#5114#0" expanded="true" />
-            <element signature="e#5113#5114#0" expanded="true" />
-            <element signature="e#5544#6028#0" expanded="true" />
-            <element signature="e#6027#6028#0" expanded="true" />
-            <element signature="e#6081#6444#0" expanded="true" />
-            <element signature="e#6443#6444#0" expanded="true" />
-            <element signature="e#6567#7052#0" expanded="true" />
-            <element signature="e#7051#7052#0" expanded="true" />
-            <element signature="e#7173#7447#0" expanded="true" />
-            <element signature="e#7446#7447#0" expanded="true" />
-            <element signature="e#7684#7992#0" expanded="true" />
-            <element signature="e#7991#7992#0" expanded="true" />
-            <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onActivityResult#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onAttach#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#onDetach#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
-            <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeListFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.33282673" vertical-offset="522" max-vertical-offset="1406">
@@ -1137,22 +1024,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="741">
-          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="589">
-          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/TimePickerFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.735007" vertical-offset="385" max-vertical-offset="1102">
@@ -1165,6 +1036,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.1324965" vertical-offset="0" max-vertical-offset="717">
           <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11127168" vertical-offset="84" max-vertical-offset="851">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/CrimeFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78267044" vertical-offset="0" max-vertical-offset="1444">
+          <caret line="69" column="102" selection-start-line="69" selection-start-column="102" selection-end-line="69" selection-end-column="102" />
+          <folding>
+            <element signature="docComment;class#CrimeFragment#0" expanded="false" />
+            <element signature="e#1112#1147#0" expanded="false" />
+            <element signature="method#newInstance#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onCreate#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onCreateView#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="class#2762:3298" expanded="false" />
+            <element signature="method#beforeTextChanged#0;class#2762:3298" expanded="false" />
+            <element signature="method#onTextChanged#0;class#2762:3298" expanded="false" />
+            <element signature="method#afterTextChanged#0;class#2762:3298" expanded="false" />
+            <element signature="e#3592#3688#0" expanded="false" />
+            <element signature="method#onCreateOptionsMenu#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onOptionsItemSelected#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onContextItemSelected#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onActivityResult#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStop#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onStart#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onPause#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onAttach#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#onDetach#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#updateDate#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#showPhoto#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#getCrimeReport#0;class#CrimeFragment#0" expanded="false" />
+            <element signature="method#deletePhoto#0;class#CrimeFragment#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/ImageFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1324965" vertical-offset="0" max-vertical-offset="741">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/ziliang/CrimalIntent/Photo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31799164" vertical-offset="0" max-vertical-offset="717">
+          <caret line="15" column="44" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
           <folding />
         </state>
       </provider>
