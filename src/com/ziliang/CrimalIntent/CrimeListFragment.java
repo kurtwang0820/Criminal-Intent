@@ -16,11 +16,11 @@ public class CrimeListFragment extends android.app.ListFragment {
     private ArrayList<Crime> mCrimes;
     private boolean mSubtitleVisible;
     private Button emptyCreateButton;
-    private Callbacks mCallbacks;
-
-    public interface Callbacks {
-        void onCrimeSelected(Crime crime);
-    }
+//    private Callbacks mCallbacks;
+//
+//    public interface Callbacks {
+//        void onCrimeSelected(Crime crime);
+//    }
 
     //    private static final String TAG="CrimeListFragment";
     @Override
@@ -117,7 +117,10 @@ public class CrimeListFragment extends android.app.ListFragment {
                 Crime crime = new Crime();
                 CrimeLab.get(getActivity()).addCrime(crime);
                 ((CrimeAdapter) getListAdapter()).notifyDataSetChanged();
-                mCallbacks.onCrimeSelected(crime);
+                Intent i=new Intent(getActivity(),CrimePagerActivity.class);
+                i.putExtra(CrimeFragment.EXTRA_CRIME_ID,crime.getmId());
+                startActivity(i);
+//                mCallbacks.onCrimeSelected(crime);
                 return true;
             case R.id.menu_item_show_subtitle:
                 if (getActivity().getActionBar().getSubtitle() == null) {
@@ -158,11 +161,10 @@ public class CrimeListFragment extends android.app.ListFragment {
     @Override
     public void onListItemClick(ListView l, View v, int position, long id) {
         Crime c = ((CrimeAdapter) getListAdapter()).getItem(position);
-//        Log.d(TAG, c.getmTitle() + " was clicked");
-//        Intent i = new Intent(getActivity(),CrimePagerActivity.class);
-//        i.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getmId());
-//        startActivity(i);
-        mCallbacks.onCrimeSelected(c);
+        Intent i=new Intent(getActivity(),CrimePagerActivity.class);
+        i.putExtra(CrimeFragment.EXTRA_CRIME_ID,c.getmId());
+        startActivity(i);
+//        mCallbacks.onCrimeSelected(c);
     }
 
     @Override
@@ -174,13 +176,13 @@ public class CrimeListFragment extends android.app.ListFragment {
     @Override
     public void onAttach(Activity activity) {
         super.onAttach(activity);
-        mCallbacks = (Callbacks) activity;
+//        mCallbacks = (Callbacks) activity;
     }
 
     @Override
     public void onDetach() {
         super.onDetach();
-        mCallbacks = null;
+//        mCallbacks = null;
     }
 
 //    public void updateUI() {
